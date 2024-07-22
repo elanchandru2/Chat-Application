@@ -1,0 +1,25 @@
+.loading-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #282B36;
+    justify-content: center;
+}
+
+.loading-spinner {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border: 10px solid red;
+    border-radius: 50%; /* Makes it a circle */
+    border-top-color: transparent;
+    animation: rotate 1s linear infinite; /* Animation definition */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
